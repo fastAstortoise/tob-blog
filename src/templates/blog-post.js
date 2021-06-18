@@ -17,33 +17,25 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header className="bg-white flex items-center justify-between px-10 pt-5 rounded-t-2xl">
+          <h1 itemProp="headline" className="font-extrabold">{post.frontmatter.title}</h1>
+          <p className="text-right"><small>Created Date: {post.frontmatter.date}</small></p>
         </header>
         <section
+          className="prose bg-white p-10 max-w-full"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
         <hr />
-        <footer>
+        <footer className="my-10">
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+      <nav className="mb-10">
+        <ul className="flex flex-wrap justify-between">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -84,7 +76,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
+        description,
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

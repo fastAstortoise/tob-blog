@@ -21,14 +21,9 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+    <div className="h-screen flex flex-col items-center" data-is-root-path={isRootPath}>
+      <header className="font-extrabold my-5 text-4xl w-3/5">{header}</header>
+      <main className="p-4 sm:w-4/5 lg:w-4/5 w-full">{children}</main>
     </div>
   )
 }
