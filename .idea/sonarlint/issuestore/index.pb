@@ -3,8 +3,6 @@ A
 gatsby-browser.js,c\8\c8df22cf90adfac9a95adc94b85984d3a6b193cd
 N
 src/pages/using-typescript.tsx,6\5\65d23f00f779712f3ff5ed966fa69e73df828ff0
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 A
 postcss.config.js,3\f\3f70684581fd16ab3be77ca959e0138ef3ee8bfb
 B
@@ -25,7 +23,21 @@ J
 src/templates/blog-post.js,b\0\b08d3cfd60474724b00331398d69a97110991ff1
 I
 src/utilities/paginate.js,8\7\8748ea3078377b70279b6db9a050d2be3af12944
->
-gatsby-node.js,a\2\a23780635b5930667a9b325dccf9af8bbfc26434
 [
 +content/blog/prometheus/prometheus-setup.md,5\d\5dbb0dd4c8f5901afdefa2e933e441f590e2d092
+E
+src/components/bio.js,7\b\7b01be164d0626d42c723910d146aef0235a9c67
+E
+src/components/seo.js,8\2\82f038d290bd9865a0fa942f8e9860022807f874
+B
+src/pages/index.js,c\1\c16ef34da304c300e7b6c91b3a47fea77c278c7a
+?
+public/404.html,9\1\9165de4c08ed7f75a6e91e356e892f20aa817eb8
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+>
+gatsby-node.js,a\2\a23780635b5930667a9b325dccf9af8bbfc26434
+A
+public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
+@
+gatsby-config.js,4\f\4f261c6e46142df5e9a7303296b3fca674d719a9
